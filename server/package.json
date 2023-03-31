@@ -1,10 +1,14 @@
 {
   "name": "flaner-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^2.4.2",
+    "pg": "^8.10.0"
+  }
 }
