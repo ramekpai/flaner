@@ -1,7 +1,10 @@
 import React from 'react';
+import AuthForm from '../components/AuthForm/AuthForm';
 
 const HomePage = () => {
-  return <div>Welcome to Next.js!</div>
+  return (
+    <AuthForm />
+  );
 }
 
 export default HomePage;
