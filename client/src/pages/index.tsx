@@ -3,7 +3,9 @@ import AuthForm from '../components/AuthForm/AuthForm';
 
 const HomePage = () => {
   return (
-    <AuthForm />
+    <div className="content-wrapper">
+      <AuthForm />
+    </div>
   );
 }
 
