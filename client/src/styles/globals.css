@@ -15,6 +15,7 @@ img {
 .header {
   color: var(--color);
   background-color: var(--background-color);
+  border-bottom: 1px solid var(--color-gray-100);
 }
 
 .main {

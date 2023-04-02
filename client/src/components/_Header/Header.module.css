@@ -11,6 +11,11 @@
   gap: 24px;
 }
 
+.content {
+  display: inline-flex;
+  gap: 32px;
+}
+
 .heading {
   margin: unset;
   font-size: 24px;
