@@ -1,25 +1,25 @@
-import { Open_Sans } from 'next/font/google';
+import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 import '../styles/design_tokens.css';
-import type { AppProps } from 'next/app';
+import '../styles/theme_light.css';
+import '../styles/theme_dark.css';
+import GlobalStyles from '../components/_GlobalStyles/GlobalStyles';
 import Header from '../components/_Header/Header';
 import Footer from '../components/_Footer/Footer';
-
-const openSans = Open_Sans({ subsets: ['cyrillic'] });
 
 const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <style jsx global>{`
-        html {
-          font-family: ${openSans.style.fontFamily};
-        }
-      `}</style>
-      <Header />
-      <main id="main" className="content">
+      <GlobalStyles />
+      <header id="header" className="header">
+        <Header />
+      </header>
+      <main id="main" className="main">
         <Component {...pageProps} />
       </main>
-      <Footer />
+      <footer id="footer" className="footer">
+        <Footer />
+      </footer>
     </>
   );
 }

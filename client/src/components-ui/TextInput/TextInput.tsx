@@ -9,7 +9,6 @@ const TextInput = ({
   const uuid =  useMemo(() => createUUID(), []);
   const inputID = `text-input-${uuid}`;
 
-  // Render
   return (
     <div className={s.root}>
       {!!label && (

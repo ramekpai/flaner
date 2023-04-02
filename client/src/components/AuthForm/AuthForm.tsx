@@ -1,10 +1,13 @@
 import React from 'react';
-// Others
 import s from './AuthForm.module.css';
 
 const AuthForm = () => {
   return (
-    <h1>ya main content</h1>
+    <div className={s.root}>
+      <h1 className={s.heading}>
+        Auth form
+      </h1>
+    </div>
   );
 };
 
