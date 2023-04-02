@@ -1,14 +1,15 @@
 import React from 'react';
+import classNames from 'classnames';
 import s from './Header.module.css';
 import ColorThemeSwitcher from './ColorThemeSwitcher/ColorThemeSwitcher';
-import classNames from 'classnames';
+import Logo from './Logo/Logo';
 
 const Header = () => {
   return (
     <div className={classNames(s.root, 'content-wrapper')}>
-      <h1 className={s.heading}>
-        Header
-      </h1>
+      <div className={s.content}>
+        <Logo />
+      </div>
       <ColorThemeSwitcher />
     </div>
   );
