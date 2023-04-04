@@ -1,14 +1,13 @@
 
 module.exports = {
-
   development: {
     client: 'postgresql',
     connection: {
       host: 'localhost',
       port : 5432,
       database: 'flaner',
-      user: 'dev',
-      password: 'dev'
+      user: 'finalyfin',
+      password: 'postgres'
     }
   },
 
@@ -22,5 +21,4 @@ module.exports = {
       password: process.env.PG_CONNECTION_PASSWORD
     }
   }
-
 };
